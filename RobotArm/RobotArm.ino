@@ -16,7 +16,7 @@
 
 int e0last = LOW ,e1last = LOW ,e2last = LOW ,e3last = LOW;
 int e0n = LOW, e1n = LOW, e2n = LOW, e3n = LOW;
-int e0pos, e1pos, e2pos, e3pos;
+int e0pos = 179, e1pos, e2pos, e3pos;
 Servo s0,s1,s2,s3;
 
  void setup() {
@@ -39,10 +39,30 @@ Servo s0,s1,s2,s3;
    if ((e0last == LOW) && (e0n == HIGH)) {
      if (digitalRead(e0dt) == LOW) e0pos-=5;
      else e0pos+=5;
-     s0.write(abs(e0pos) % 180);
+     s0.write((abs(e0pos)) % 110 + 110);
      Serial.println (e0pos);
    }
-   
+
+   if ((e1last == LOW) && (e1n == HIGH)) {
+     if (digitalRead(e1dt) == LOW) e1pos-=5;
+     else e1pos+=5;
+     s1.write((abs(e1pos)) % 180);
+     Serial.println (e1pos);
+   }
+
+   if ((e2last == LOW) && (e2n == HIGH)) {
+     if (digitalRead(e2dt) == LOW) e2pos-=5;
+     else e2pos+=5;
+     s2.write((abs(e2pos)) % 180);
+     Serial.println (e2pos);
+   }
+
+   if ((e3last == LOW) && (e3n == HIGH)) {
+     if (digitalRead(e3dt) == LOW) e3pos-=5;
+     else e3pos+=5;
+     s3.write((abs(e3pos)) % 180);
+     Serial.println (e3pos);
+   }
    e0last = e0n;
    e1last = e1n;
    e2last = e2n;
