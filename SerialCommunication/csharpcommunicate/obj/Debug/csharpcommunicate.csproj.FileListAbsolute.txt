@@ -1,0 +1,7 @@
+C:\Users\Koder0205\Desktop\csharpcommunicate\bin\Debug\csharpcommunicate.exe.config
+C:\Users\Koder0205\Desktop\csharpcommunicate\bin\Debug\csharpcommunicate.exe
+C:\Users\Koder0205\Desktop\csharpcommunicate\bin\Debug\csharpcommunicate.pdb
+C:\Users\Koder0205\Desktop\csharpcommunicate\obj\Debug\csharpcommunicate.csprojAssemblyReference.cache
+C:\Users\Koder0205\Desktop\csharpcommunicate\obj\Debug\csharpcommunicate.csproj.CoreCompileInputs.cache
+C:\Users\Koder0205\Desktop\csharpcommunicate\obj\Debug\csharpcommunicate.exe
+C:\Users\Koder0205\Desktop\csharpcommunicate\obj\Debug\csharpcommunicate.pdb
